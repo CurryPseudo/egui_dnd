@@ -281,7 +281,8 @@ impl DragDropUi {
         _can_accept_what_is_being_dragged: bool,
         body: impl FnOnce(&mut Ui) -> R,
     ) -> InnerResponse<R> {
-        let margin = Vec2::splat(4.0);
+        //let margin = Vec2::splat(4.0);
+        let margin = Vec2::splat(0.0);
 
         let outer_rect_bounds = ui.available_rect_before_wrap();
         let inner_rect = outer_rect_bounds.shrink2(margin);
